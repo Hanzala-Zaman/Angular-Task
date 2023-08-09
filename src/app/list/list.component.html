@@ -1,0 +1,21 @@
+<p><b>{{title}}</b></p>
+
+<table class="table">
+  <thead>
+  <tr>
+    <td>ID</td>
+    <td>Name</td>
+    <td>City</td>
+    <td>Action</td>
+  </tr>
+</thead>
+
+<tbody>
+<tr *ngFor="let temp of Users"> 
+<td>{{temp.id}}</td>
+<td>{{temp.name}}</td>
+<td>{{temp.city}}</td>
+<td><button routerLink="/details" >View Detail</button></td>
+</tr>
+</tbody>
+</table> 
